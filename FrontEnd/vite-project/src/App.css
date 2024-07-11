@@ -1,0 +1,145 @@
+.main-container {
+    /* border: 2px solid orange; */
+    height: 100vh;
+    background-color: #488bc5;
+    /* display: flex; */
+    /* position: relative; */
+}
+
+.img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    /* border: 2px solid yellow; */
+}
+
+.heading {
+    margin-bottom: 5px;
+}
+
+.card-conainer {
+    /* border: 2px solid green; */
+    text-align: center;
+    width:25%;
+    margin: 5px;
+}
+
+.timewithdate {
+    font-size: 10px;
+    margin: 0;
+}
+
+.discription {
+    width: auto;
+    font-size: 11px;
+    margin: 0;
+}
+
+.cancelbtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 2px;
+    border: none;
+    background-color: rgb(231, 75, 75);
+    
+}
+
+.addbtn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2px;
+    border: none;
+    background-color: rgb(112, 151, 116);
+
+}
+
+.dateandTime{
+    color: black;
+    font-weight: bold;
+}
+
+.createBtn {
+    width: 15%;
+    height: 2rem;
+    /* font-size: 1rem; */
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(101, 101, 139);
+    cursor: pointer;
+}
+
+.createbtndiv {
+    text-align: center;
+    position: sticky;
+    bottom: 25px;
+    /* top: 50rem; */
+    margin-top: 10px;
+}
+
+.UploadImg {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    
+
+}
+ .UploadImg:hover  {
+    border: 2px solid orange;
+    
+}
+
+
+.card {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin: 10px 0;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: gray;
+  }
+
+
+  .card-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #488bc5;
+    padding: 40px;
+    width: 100%;
+  }
