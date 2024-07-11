@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "0087f8cb-5bd4-48e4-ba60-e32c5b5f4e25",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20828764"
+	},
+	"item": [
+		{
+			"name": "uploadimage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{mysqlbaseurl}}/create",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"heading\" :\"HEADING\",\r\n    \"disc\" : \"DISCE\",\r\n    \"img\" :\"IMGNAME\" //img name\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mysqlbaseurl}}/api/create",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"api",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{mysqlbaseurl}}/getdata",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"getdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "singleViewById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{mysqlbaseurl}}/api/getById",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"api",
+						"getById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upadteById",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"38\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mysqlbaseurl}}/api/delete",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"api",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"filterdata\" :\"medium\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mysqlbaseurl}}/api/filter",
+					"host": [
+						"{{mysqlbaseurl}}"
+					],
+					"path": [
+						"api",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
